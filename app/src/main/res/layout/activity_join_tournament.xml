@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinTournament"
+    android:background="@drawable/background03_blur">
+    <TextView
+        android:id="@+id/availabiltyFreefiremobo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="34dp"
+        android:text="Not available"
+        android:textColor="#EF0404"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freefireBtn" />
+
+    <TextView
+        android:id="@+id/availabilityPUBGmobo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Available"
+        android:textColor="#10EA19"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/availabiltyFreefiremobo"
+        app:layout_constraintStart_toEndOf="@+id/availabilityCODmobo"
+        app:layout_constraintTop_toBottomOf="@+id/pubgmobobtn" />
+
+    <Button
+        android:id="@+id/codmoboBtn"
+        android:layout_width="125dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:text="COD Warzone"
+        android:textAlignment="textEnd"
+        app:backgroundTint="#90039BE5"
+        app:backgroundTintMode="multiply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/pubgmobobtn"
+        android:layout_width="125dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="sans-serif-condensed"
+        android:text="PUBG"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="false"
+        app:backgroundTint="#90039BE5"
+        app:backgroundTintMode="multiply"
+        app:iconTint="@color/material_on_surface_stroke"
+        app:layout_constraintEnd_toStartOf="@+id/freefireBtn"
+        app:layout_constraintStart_toEndOf="@+id/codmoboBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/freefireBtn"
+        android:layout_width="125dp"
+        android:textColor="@color/white"
+        android:layout_height="57dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="sans-serif-condensed"
+        android:text="valorant"
+        android:textAlignment="textEnd"
+        app:backgroundTint="#90039BE5"
+        app:backgroundTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@drawable/joinheadingpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/joinandroidhomebtn"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        app:backgroundTint="#00000000"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="#FFFBFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Find your tournament"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Here"
+        android:textColor="#F3EAD5"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView7878"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:background="#00FFFFFF"
+        android:focusable="auto"
+        app:layout_constraintBottom_toBottomOf="@+id/pubgmobobtn"
+        app:layout_constraintEnd_toEndOf="@+id/pubgmobobtn"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="@+id/pubgmobobtn"
+        app:layout_constraintTop_toTopOf="@+id/pubgmobobtn"
+        app:layout_constraintVertical_bias="0.535"
+        app:srcCompat="@drawable/pubgpc"
+        app:tintMode="src_over" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:focusable="auto"
+        app:layout_constraintBottom_toBottomOf="@+id/codmoboBtn"
+        app:layout_constraintEnd_toEndOf="@+id/codmoboBtn"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/codmoboBtn"
+        app:layout_constraintTop_toTopOf="@+id/codmoboBtn"
+        app:layout_constraintVertical_bias="0.535"
+        app:srcCompat="@drawable/warzone"
+        app:tintMode="src_over" />
+
+    <ImageView
+        android:id="@+id/valorant"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="@+id/freefireBtn"
+        app:layout_constraintEnd_toEndOf="@+id/freefireBtn"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/freefireBtn"
+        app:layout_constraintTop_toTopOf="@+id/freefireBtn"
+        app:layout_constraintVertical_bias="0.535"
+        app:srcCompat="@drawable/valorant"
+        app:tintMode="src_over" />
+
+    <TextView
+        android:id="@+id/availabilityCODmobo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="Not available"
+        android:textColor="#EF0404"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codmoboBtn" />
+
+    <TextView
+        android:id="@+id/textViewOtherTourAndro"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#0C03DAC5"
+        android:paddingTop="76dp"
+        android:text="Other tournaments that you might like"
+        android:textAlignment="center"
+        android:textColor="#92FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availabilityPUBGmobo"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Button
+        android:id="@+id/backBtnjoinAndroidForm"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#0003DAC5"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:iconTint="#FFFBFB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

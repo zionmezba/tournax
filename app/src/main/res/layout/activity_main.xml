@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_loading"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Loadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Loading..."
+        android:textColor="#FFBF00"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_loading" />
+
+    <TextView
+        android:id="@+id/loadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Play | Discover | Earn"
+        android:textColor="#FFBF00"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x_loading" />
+
+    <ImageView
+        android:id="@+id/circle_loading"
+        android:layout_width="279dp"
+        android:layout_height="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/loadingcircle" />
+
+    <ImageView
+        android:id="@+id/x_loading"
+        android:layout_width="141dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_loading"
+        app:layout_constraintEnd_toEndOf="@+id/circle_loading"
+        app:layout_constraintStart_toStartOf="@+id/circle_loading"
+        app:layout_constraintTop_toTopOf="@+id/circle_loading"
+        app:layout_constraintVertical_bias="0.502"
+        app:srcCompat="@drawable/logo_x" />
+
+    <ImageView
+        android:id="@+id/fullTxLogo02"
+        android:layout_width="259dp"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        app:srcCompat="@drawable/logo_txn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
